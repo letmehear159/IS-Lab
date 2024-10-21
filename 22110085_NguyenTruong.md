@@ -9,6 +9,7 @@
 
 **Question 1**: Use sqlmap to get information about all available databases
 **Answer 1**:
+## Getting all databases:
 Set up the database for DVWA and go to the webiste
 In SQL Injection Blind Type in UserID then save the URL
 <img src="https://github.com/letmehear159/IS-Lab/blob/master/image1.png" alt="screenShot"><br>
