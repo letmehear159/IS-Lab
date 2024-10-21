@@ -9,6 +9,14 @@
 
 **Question 1**: Use sqlmap to get information about all available databases
 **Answer 1**:
+Set up the database for DVWA and go to the webiste
+In SQL Injection Blind Type in UserID then save the URL
+<img src="https://github.com/letmehear159/IS-Lab/blob/master/image1.png" alt="screenShot"><br>
+
+Then open the developerMod and copy the Cookie of the website:
+<img src="https://github.com/letmehear159/IS-Lab/blob/master/Cookie.png" alt="screenShot"><br>
+Open SqlMap and starting test connection: 
+<img src="https://github.com/letmehear159/IS-Lab/blob/master/inject.png" alt="screenShot"><br>
 
 **Question 2**: Use sqlmap to get tables, users information
 **Answer 2**:
